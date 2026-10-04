@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XSMN Collector V1</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>XSMN COLLECTOR V1</h1>
+
+    <p class="subtitle">
+        Thu thập và lọc số từ nhiều nguồn
+    </p>
+
+    <div class="card">
+
+        <label>Ngày cần phân tích</label>
+
+        <input
+            type="date"
+            id="dateInput"
+        >
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>6 nguồn dữ liệu</h2>
+
+        <input
+            type="url"
+            id="url1"
+            placeholder="URL nguồn 1"
+        >
+
+        <input
+            type="url"
+            id="url2"
+            placeholder="URL nguồn 2"
+        >
+
+        <input
+            type="url"
+            id="url3"
+            placeholder="URL nguồn 3"
+        >
+
+        <input
+            type="url"
+            id="url4"
+            placeholder="URL nguồn 4"
+        >
+
+        <input
+            type="url"
+            id="url5"
+            placeholder="URL nguồn 5"
+        >
+
+        <input
+            type="url"
+            id="url6"
+            placeholder="URL nguồn 6"
+        >
+
+    </div>
+
+
+    <button
+        id="readButton"
+        onclick="readSources()"
+    >
+        ĐỌC NGUỒN
+    </button>
+
+
+    <div
+        id="status"
+        class="status"
+    >
+        Chưa thực hiện
+    </div>
+
+
+    <div class="card">
+
+        <h2>Kết quả Lô 2 số</h2>
+
+        <div id="twoDigitResult">
+            Chưa có dữ liệu
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Kết quả Lô 3 số</h2>
+
+        <div id="threeDigitResult">
+            Chưa có dữ liệu
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Thống kê đồng thuận</h2>
+
+        <div id="consensusResult">
+            Chưa có dữ liệu
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
